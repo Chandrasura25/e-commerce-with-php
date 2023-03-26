@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'poppins';
+}
+body{
+    background: #150019;
+}
+section{
+	width: 100%;
+	height: 100vh;  
+}
+.h1{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 5em;
+	font-family: sans-serif;
+	transition: .5s;
+	background: linear-gradient(rgba(255, 255, 255, 1.0) 20%, transparent 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.h1:hover{
+	letter-spacing: 20px;
+}
+section .events{
+    margin-top: 20px;
+	position: relative;
+	width: 85%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+}
+section .events .define ul{
+    position: absolute;
+	padding: 40px;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    margin: 40px;
+    height: 100px;
+    font-size: 1.3em;
+    line-height: 1em;
+}
+section .events .define ul li{
+    list-style: none;
+    margin: 0 15px ;
+}
+section .events .ul{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 40px;
+    width: 100%;
+}
+section .events .ul li{
+	background: #fff;
+	list-style: none;
+	height: 200px;
+	margin: 15px 0;
+    position: relative;
+}
+section .events .define ul li:nth-child(1){
+    width: 45%;
+    text-align: left;
+}
+section .events .define ul li:nth-child(2){
+    width: 5%;
+    text-align: left;
+}
+section .events .define ul li:nth-child(3),section .events .define ul li:nth-child(4),section .events .define ul li:nth-child(5){
+    width: 10%;
+    text-align: end;
+}
+section .events .ul li .time{
+	position: relative;
+	padding: 20px;
+	background: #262626;
+	width: 30%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	transition: .5s;
+}
+section .events .ul li:hover .time{
+	background: #e91e63;
+}
+section .events .ul li .time h2{
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+section .events .ul li .time h2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section .events .ul li .details{
+	padding: 20px;
+	background: #fff;
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+section .events .ul li .details h3{
+	position: relative;
+	font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+section .events .ul li .details p{
+	position: relative;
+	font-size: 16px;
+	margin: 10px 0 0;
+}
+section .events .ul li .size{
+    padding: 20px;
+	background: #fff;
+	width: 5%;
+	height: 100%;
+	float: left;
+}
+section .events .ul li .size a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	border: 2px solid #262626;
+	margin-top: 15px;
+	font-size: 18px;
+	transition: .5s;
+	color: #262626;
+}
+section .events ul li .size a:hover{
+	background: #e91e63;
+	border-color: #e91e63;
+	color: #fff;
+}
+.quantity,.remove, .price{
+    position: relative;
+    width: 10%;
+	height: 100%;
+	float: left;
+    margin-left: 20px;
+}
+.quantity .contain, .remove .box, .price .priceBx{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+	transform: translateY(-50%);
+}
+.price .priceBx{
+    left: 100%;
+}
+.priceBx p{
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.remove .box{
+    width: 160px;
+    height: 50px;
+    background: #150019;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    font-size: 2em;
+    cursor: pointer;
+}
+.remove .box:hover{
+   background: #e91e63; 
+}
+.remove .box i{
+    color: #fff;
+    cursor: pointer;
+}
+.contain input[type='number']{
+    transition: .5s;
+    position: relative;
+    border: 2px solid #00deff;
+    color: #00deff;
+    font-size: 24px;
+    font-weight: 700;
+    outline: none;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    border-radius: 40px;
+}
+.bod{
+    position:absolute;
+    bottom: 30px;
+    right: 30px;
+}
+.a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#755bea,#ff72c0);
+    transition:0.5s;
+    overflow: hidden;
+}
+.a:hover{
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+@media (max-width:991px) {
+    .h1{
+        font-size: 3.5em;
+    }
+    section .events{
+        width: 100%;
+    }
+}
